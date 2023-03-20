@@ -61,3 +61,10 @@
   opacity: 1;
   transform: scaleY(1);
 }
+
+.hero {
+  background-image: url(../img/pexels-gantas-vaičiulėnas-3713501.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
