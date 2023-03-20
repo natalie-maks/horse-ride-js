@@ -13,15 +13,42 @@
     />
     <title>Document</title>
   </head>
-  <body class="container mx-auto">
-    <nav class="flex bg-slate-600 h-16 mx-auto">
-      <img src="img/logo-01.png" alt="" />
-      <ul class="flex font-sans">
-        <li>Home</li>
-        <li>About us</li>
-        <li>Our Rides</li>
-        <li>Prices</li>
-        <li>Contact</li>
+  <body class="">
+    <nav class="relative container mx-auto">
+      <div
+        class="flex items-center justify-between p-4 border-b-2 border-brown-700"
+      >
+        <img src="img/logo-01.png" class="h-12 md:h-16" alt="" />
+        <ul class="hidden md:flex text-xl space-x-6 font-sans">
+          <li><a href="" class="hover:text-brown-900">Home</a></li>
+          <li><a href="" class="hover:text-brown-900">About us</a></li>
+          <li><a href="" class="hover:text-brown-900">Our Rides</a></li>
+          <li><a href="" class="hover:text-brown-900">Prices</a></li>
+          <li><a href="" class="hover:text-brown-900">Contact</a></li>
+        </ul>
+        <a
+          href=""
+          class="hidden md:block text-white bg-brown-800 rounded-full p-4 px-12 font-sans hover:bg-brown-600"
+          >BOOK A RIDE</a
+        >
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <ul
+        id="menu"
+        class="hidden absolute py-6 text-center bg-white font-sans text-xl w-full space-y-4 md:hidden border-b-2 border-brown-700"
+      >
+        <li><a href="" class="hover:text-brown-900">Home</a></li>
+        <li><a href="" class="hover:text-brown-900">About us</a></li>
+        <li><a href="" class="hover:text-brown-900">Our Rides</a></li>
+        <li><a href="" class="hover:text-brown-900">Prices</a></li>
+        <li><a href="" class="hover:text-brown-900">Contact</a></li>
       </ul>
     </nav>
     <main>
@@ -153,5 +180,6 @@
         </p>
       </section>
     </main>
+    <script src="/index.js"></script>
   </body>
 </html>
