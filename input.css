@@ -78,3 +78,25 @@
 .card h3 {
   @apply text-brown-800 text-xl mb-2;
 }
+
+.faq {
+  @apply lg:w-4/5 mx-auto mt-2 pb-2 border-b-2 border-brown-800;
+}
+
+.faq .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+}
+
+.faq button {
+  transition: transform 1s ease-in-out;
+}
+
+.faq.active button {
+  transform: rotate(180deg);
+}
