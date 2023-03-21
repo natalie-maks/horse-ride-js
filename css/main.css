@@ -699,6 +699,10 @@ h1,
   height: 50vh;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
