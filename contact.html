@@ -4,7 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Noto+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="fixed top-0 left-0 right-0 z-10 w-full lg:relative bg-brown-50">
+      <div
+        class="flex container lg:w-11/12 xl:w-4/5 items-center justify-between p-3 border-b-2 mx-auto border-brown-700"
+      >
+        <img src="img/logo.png" class="h-12 md:h-16" alt="" />
+        <ul class="hidden lg:flex text-lg space-x-6 font-sans">
+          <li><a href="/index.html" class="hover:text-brown-800">Home</a></li>
+          <li>
+            <a href="/about.html" class="hover:text-brown-800">About us</a>
+          </li>
+          <li>
+            <a href="/rides.html" class="hover:text-brown-800">Our Rides</a>
+          </li>
+          <li>
+            <a href="/prices.html" class="hover:text-brown-800">Prices</a>
+          </li>
+          <li>
+            <a href="/contact.html" class="hover:text-brown-800">Contact</a>
+          </li>
+        </ul>
+        <a
+          href=""
+          class="hidden lg:block text-white bg-brown-800 border-brown-800 border-2 py-4 px-12 font-sans hover:bg-brown-600"
+          >BOOK A RIDE</a
+        >
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <ul
+        id="menu"
+        class="hidden absolute py-6 text-center bg-white font-sans text-xl w-full space-y-4 lg:hidden border-b-2 border-brown-700"
+      >
+        <li><a href="/index.html" class="hover:text-brown-900">Home</a></li>
+        <li><a href="/about.html" class="hover:text-brown-900">About us</a></li>
+        <li>
+          <a href="/rides.html" class="hover:text-brown-900">Our Rides</a>
+        </li>
+        <li><a href="/prices.html" class="hover:text-brown-900">Prices</a></li>
+        <li>
+          <a href="/contact.html" class="hover:text-brown-900">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="/index.js"></script>
+  </body>
 </html>
