@@ -79,24 +79,28 @@
   @apply text-brown-800 text-xl mb-2;
 }
 
-.faq {
-  @apply lg:w-4/5 mx-auto mt-2 pb-2 border-b-2 border-brown-800;
+.lines {
+  @apply lg:w-4/5 mx-auto mt-2 border-b-2 border-brown-800;
 }
 
-.faq .answer {
+.lines .option {
   max-height: 0;
   overflow: hidden;
   transition: max-height 1s ease-in-out;
 }
 
-.faq.active .answer {
-  max-height: 300px;
+.lines.active .option {
+  max-height: 600px;
+}
+.lines.faq.active .option {
+  max-height: 160px;
 }
 
-.faq button {
+.lines button {
+  @apply pointer-events-none;
   transition: transform 1s ease-in-out;
 }
 
-.faq.active button {
+.lines.active button {
   transform: rotate(180deg);
 }

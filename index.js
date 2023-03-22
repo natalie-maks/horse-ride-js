@@ -16,10 +16,10 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-const faqs = document.querySelectorAll(".faq");
+const linesHeaders = document.querySelectorAll(".lines .header");
 
-faqs.forEach((faq) => {
-  faq.addEventListener("click", () => {
-    faq.classList.toggle("active");
+linesHeaders.forEach((header) => {
+  header.addEventListener("click", (e) => {
+    e.target.parentElement.classList.toggle("active");
   });
 });
