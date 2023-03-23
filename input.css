@@ -104,3 +104,41 @@
 .lines.active button {
   transform: rotate(180deg);
 }
+
+.days * {
+  margin-bottom: 1rem;
+}
+
+.days .inactive {
+  color: grey;
+}
+
+.days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+}
+.days li.inactive {
+  color: #aaa;
+  pointer-events: none;
+}
+
+.days li.active {
+  color: white;
+}
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before {
+  @apply bg-brown-900;
+}
+.days li:not(.active):hover::before {
+  @apply bg-brown-50;
+}
