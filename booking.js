@@ -128,7 +128,7 @@ rides.addEventListener("change", (e) => {
 
   if (
     selectedRideTypeOption.dataset &&
-    selectedRideTypeOption.dataset !== selectedRidesOption.dataset.type
+    selectedRideTypeOption.dataset.type !== selectedRidesOption.dataset.type
   ) {
     rideType.value = "Choose option";
   }
@@ -158,12 +158,9 @@ const rideErrorWindow = document.getElementById("ride-error-window");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(rides.value);
-  console.log(rideType.value);
 
   if (rides.value == "Choose option" || rideType.value == "Choose option") {
     rideErrorWindow.classList.remove("hidden");
-
     window.addEventListener("click", () => {
       rideErrorWindow.classList.add("hidden");
     });
@@ -174,6 +171,7 @@ form.addEventListener("submit", (e) => {
     window.addEventListener("click", () => {
       successWindow.classList.add("hidden");
     });
+    form.reset();
   }
 });
 
@@ -181,8 +179,6 @@ const cardNumber = document.getElementById("card-number");
 const expirationDate = document.getElementById("expire-date");
 const cvv = document.getElementById("cvv");
 const phone = document.getElementById("phone");
-
-console.log(expirationDate);
 
 var cardnumber_mask = new IMask(cardNumber, {
   mask: "0000{ }0000{ }0000{ }0000",
@@ -215,5 +211,3 @@ var expirationdate_mask = new IMask(expirationDate, {
     },
   },
 });
-
-//Mask the security code
