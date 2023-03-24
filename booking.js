@@ -1,11 +1,11 @@
-const daysTag = document.querySelector(".days"),
-  currentDate = document.getElementById("current-date"),
-  prevNextIcon = document.querySelectorAll("#calendar header span");
+const daysTag = document.querySelector(".days");
+const currentDate = document.getElementById("current-date");
+const prevNextIcon = document.querySelectorAll("#calendar header span");
 const calendar = document.getElementById("calendar");
 
-let date = new Date(),
-  currYear = date.getFullYear(),
-  currMonth = date.getMonth();
+let date = new Date();
+let currYear = date.getFullYear();
+let currMonth = date.getMonth();
 
 let activeDay = date;
 
