@@ -17,13 +17,23 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <title>Horse Riding Club</title>
+    <meta
+      name="description"
+      content="Horse Riding Club - We offer a unique horse riding experience in Devon"
+    />
   </head>
   <body class="bg-brown-50">
     <nav class="fixed top-0 left-0 right-0 z-10 w-full lg:relative bg-brown-50">
       <div
         class="flex container lg:w-11/12 xl:w-4/5 items-center justify-between p-3 border-b-2 mx-auto border-brown-700"
       >
-        <img src="img/logo.png" class="h-12 md:h-16" alt="" />
+        <img
+          src="img/logo.png"
+          width="220"
+          height="72"
+          class="h-12 md:h-16 w-auto"
+          alt="company logo"
+        />
         <ul class="hidden lg:flex text-lg space-x-6 font-sans">
           <li><a href="/index.html" class="hover:text-brown-800">Home</a></li>
           <li>
@@ -44,7 +54,11 @@
           class="hidden lg:block text-white bg-brown-800 border-brown-800 border-2 py-4 px-12 font-sans hover:bg-brown-600"
           >BOOK A RIDE</a
         >
-        <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none">
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus:outline-none"
+          aria-label="Menu"
+        >
           <span class="hamburger-top"></span>
           <span class="hamburger-middle"></span>
           <span class="hamburger-bottom"></span>
@@ -90,21 +104,21 @@
         </p>
         <div class="overflow-auto pb-6 w-full flex flex-nowrap gap-x-5">
           <article class="card">
-            <img src="/img/pexels-sergey-makashin-5368712.jpg" alt="" />
+            <img src="/img/pexels-sergey-makashin-5368712.jpg" alt="horse riding" />
             <div class="text-wrapper">
               <h3>Private Rides</h3>
               <p>A one-to-one ride with a mounted escort.</p>
             </div>
           </article>
           <article class="card">
-            <img src="/img/pexels-bianca-1236028.jpg" alt="" />
+            <img src="/img/pexels-bianca-1236028.jpg" alt="group of people riding horse" />
             <div class="text-wrapper">
               <h3>Group Rides</h3>
               <p>2+ riders with a shared mounted escort.</p>
             </div>
           </article>
           <article class="card">
-            <img src="/img/pexels-barbara-olsen-7882544 (1).jpg" alt="" />
+            <img src="/img/pexels-barbara-olsen-7882544 (1).jpg" alt="horse riding lesson" />
             <div class="text-wrapper">
               <h3>Riding Lessons</h3>
               <p>One-to-one and group riding lessons in the arena.</p>
@@ -148,7 +162,11 @@
               </span>
             </p>
             <div class="flex items-center justify-between">
-              <img src="img/Hayley.jpg" class="object-cover h-16 w-16 rounded-full" alt="" />
+              <img
+                src="img/Hayley.jpg"
+                class="object-cover h-16 w-16 rounded-full"
+                alt="woman face"
+              />
               <div class="text-right">
                 <p class="text-brown-900 text-xl font-sans">Hayley</p>
                 <p class="text-md font-sans">March 2023</p>
@@ -175,7 +193,11 @@
               </span>
             </p>
             <div class="flex items-center justify-between">
-              <img src="img/Richard.jpg" class="object-cover h-16 w-16 rounded-full" alt="" />
+              <img
+                src="img/Richard.jpg"
+                class="object-cover h-16 w-16 rounded-full"
+                alt="man face"
+              />
               <div class="text-right">
                 <p class="text-brown-900 text-xl font-sans">Richard</p>
                 <p class="text-md font-sans">March 2023</p>
@@ -203,7 +225,11 @@
               </span>
             </p>
             <div class="flex items-center justify-between">
-              <img src="img/Suzanne.jpg" class="object-cover h-16 w-16 rounded-full" alt="" />
+              <img
+                src="img/Suzanne.jpg"
+                class="object-cover h-16 w-16 rounded-full"
+                alt="woman face"
+              />
               <div class="text-right">
                 <p class="text-brown-900 text-xl font-sans">Suzanne</p>
                 <p class="text-md font-sans">February 2023</p>
@@ -324,37 +350,43 @@
       <div
         class="container px-4 lg:w-11/12 xl:w-4/5 mx-auto flex flex-col-reverse items-center md:flex-row justify-between"
       >
-        <img src="/img/logo-white.png" alt="" />
+        <img
+          src="/img/logo-white.png"
+          width="220"
+          height="72"
+          class="h-auto w-auto"
+          alt="company logo"
+        />
         <div class="flex text-white font-sans py-8 md:py-0">
           <ul class="mr-10 lg:mr-20">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About Us</a></li>
-            <li><a href="/rides.html">Our Rides</a></li>
+            <li class="text-2xl py-2"><a href="/index.html">Home</a></li>
+            <li class="text-2xl py-2"><a href="/about.html">About Us</a></li>
+            <li class="text-2xl py-2"><a href="/rides.html">Our Rides</a></li>
           </ul>
           <ul>
-            <li><a href="/prices.html">Pricing</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li><a href="/booking.html">Booking</a></li>
+            <li class="text-2xl py-2"><a href="/prices.html">Pricing</a></li>
+            <li class="text-2xl py-2"><a href="/contact.html">Contact</a></li>
+            <li class="text-2xl py-2"><a href="/booking.html">Booking</a></li>
           </ul>
         </div>
         <ul class="flex space-x-2">
           <li>
-            <a href="https://www.facebook.com/" target="_blank"
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"
               ><img class="object-cover h-10 w-10" src="/img/facebook-icon.png" alt=""
             /></a>
           </li>
           <li>
-            <a href="https://twitter.com/?lang=en" target="_blank"
+            <a href="https://twitter.com/?lang=en" target="_blank" aria-label="Twitter"
               ><img class="object-cover h-10 w-10" src="/img/twitter-icon.png" alt=""
             /></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/" target="_blank"
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"
               ><img class="object-cover h-10 w-10" src="/img/instagram-icon.png" alt=""
             /></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/" target="_blank"
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"
               ><img class="object-cover h-10 w-10" src="/img/linkedin-icon.png" alt=""
             /></a>
           </li>

@@ -16,14 +16,21 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Document</title>
+    <title>Horse Riding Club - Prices</title>
+    <meta name="description" content="Horse Riding Club - Prices for horse riding" />
   </head>
   <body class="bg-brown-50">
     <nav class="fixed top-0 left-0 right-0 z-10 w-full lg:relative bg-brown-50">
       <div
         class="flex container lg:w-11/12 xl:w-4/5 items-center justify-between p-3 border-b-2 mx-auto border-brown-700"
       >
-        <img src="img/logo.png" class="h-12 md:h-16" alt="" />
+        <img
+          src="img/logo.png"
+          width="220"
+          height="72"
+          class="h-12 md:h-16 w-auto"
+          alt="company logo"
+        />
         <ul class="hidden lg:flex text-lg space-x-6 font-sans">
           <li><a href="/index.html" class="hover:text-brown-800">Home</a></li>
           <li>
@@ -44,7 +51,11 @@
           class="hidden lg:block text-white bg-brown-800 border-brown-800 border-2 py-4 px-12 font-sans hover:bg-brown-600"
           >BOOK A RIDE</a
         >
-        <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none">
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus:outline-none"
+          aria-label="Menu"
+        >
           <span class="hamburger-top"></span>
           <span class="hamburger-middle"></span>
           <span class="hamburger-bottom"></span>
@@ -281,37 +292,43 @@
       <div
         class="container px-4 lg:w-11/12 xl:w-4/5 mx-auto flex flex-col-reverse items-center md:flex-row justify-between"
       >
-        <img src="/img/logo-white.png" alt="" />
+        <img
+          src="/img/logo-white.png"
+          width="220"
+          height="72"
+          class="h-auto w-auto"
+          alt="company logo"
+        />
         <div class="flex text-white font-sans py-8 md:py-0">
           <ul class="mr-10 lg:mr-20">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About Us</a></li>
-            <li><a href="/rides.html">Our Rides</a></li>
+            <li class="text-2xl py-2"><a href="/index.html">Home</a></li>
+            <li class="text-2xl py-2"><a href="/about.html">About Us</a></li>
+            <li class="text-2xl py-2"><a href="/rides.html">Our Rides</a></li>
           </ul>
           <ul>
-            <li><a href="/prices.html">Pricing</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li><a href="/booking.html">Booking</a></li>
+            <li class="text-2xl py-2"><a href="/prices.html">Pricing</a></li>
+            <li class="text-2xl py-2"><a href="/contact.html">Contact</a></li>
+            <li class="text-2xl py-2"><a href="/booking.html">Booking</a></li>
           </ul>
         </div>
         <ul class="flex space-x-2">
           <li>
-            <a href="https://www.facebook.com/" target="_blank"
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"
               ><img class="object-cover h-10 w-10" src="/img/facebook-icon.png" alt=""
             /></a>
           </li>
           <li>
-            <a href="https://twitter.com/?lang=en" target="_blank"
+            <a href="https://twitter.com/?lang=en" target="_blank" aria-label="Twitter"
               ><img class="object-cover h-10 w-10" src="/img/twitter-icon.png" alt=""
             /></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/" target="_blank"
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"
               ><img class="object-cover h-10 w-10" src="/img/instagram-icon.png" alt=""
             /></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/" target="_blank"
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"
               ><img class="object-cover h-10 w-10" src="/img/linkedin-icon.png" alt=""
             /></a>
           </li>

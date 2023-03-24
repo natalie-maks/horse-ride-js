@@ -756,6 +756,10 @@ h1,
   height: 100%;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .max-h-\[40vh\] {
   max-height: 40vh;
 }
@@ -803,6 +807,10 @@ h1,
 
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .min-w-\[200px\] {
