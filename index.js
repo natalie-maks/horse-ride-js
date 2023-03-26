@@ -12,7 +12,7 @@ menuBtn.addEventListener("click", () => {
     menu.classList.remove("open");
     setTimeout(() => {
       menu.classList.add("hidden");
-    }, 3000);
+    }, 300);
   }
 });
 
